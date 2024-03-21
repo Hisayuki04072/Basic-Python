@@ -5,10 +5,12 @@ b = input("b の値を入力: ")
 a=int(a)
 b=int(b)
 r=a%b
-while r!=0:    
-    a=b
-    b=r
-    r=a%b
+while True: 
     if r==0:
         print(b)
+        break
+    else:
+        a=b
+        b=r
+        r=a%b
         

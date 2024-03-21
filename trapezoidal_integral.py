@@ -9,5 +9,7 @@ N=100
 h=(b-a)/N
 x=0
 for k in range(N):
+    k=k+1
     x=x+(h*(sin(a+(k-1)*h)+sin(a+k*h)))/2
-print(x)    
+print(x)
+print(k)    
